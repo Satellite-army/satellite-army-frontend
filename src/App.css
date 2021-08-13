@@ -36,7 +36,7 @@ body{
 .content{
   float: right;
   display: block;
-  padding:2rem;
+  padding:5rem;
 }
 
 @media screen and (min-width: 920px) {
