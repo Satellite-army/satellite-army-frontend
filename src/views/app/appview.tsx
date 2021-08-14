@@ -4,6 +4,7 @@ import { Sidebar } from 'primereact/sidebar';
 import { TieredMenu } from 'primereact/tieredmenu'
 import { MenuItem } from "../../models/app/menuitem";
 import { useHistory } from "react-router-dom";
+import { Icon } from "../../assets";
 export const AppView = (props: any)=>{
     const history = useHistory();
     const [visibleMobile, setVisibleMobile] = useState(false);
@@ -30,11 +31,11 @@ export const AppView = (props: any)=>{
             <div className="appBody">
                     <div className="sidebar">
                         <Sidebar  visible={visibleMobile} dismissable={true} className="p-sidebar-sm" id="sidebar_menu_mobile" onHide={() => setVisibleMobile(false)}>
-                            <h3>Satellite</h3>
+                            <img className="menuIcon" src={Icon} /><br/><h3 className="menuTitle">Satellite</h3>
                             <TieredMenu style={{width:"100%", border:"0px"}} model={sideMenuItems}  />
                         </Sidebar>
                         <Sidebar  baseZIndex={0} showCloseIcon={false} visible={true} dismissable={false} id="sidebar_menu" className="p-sidebar-sm" onHide={() => {}}>
-                            <h3>Satellite</h3>
+                        <img className="menuIcon" src={Icon} /><br/><h3 className="menuTitle">Satellite</h3>
                             <TieredMenu style={{width:"100%", border:"0px"}} model={sideMenuItems}  />
                         </Sidebar>
                     </div>

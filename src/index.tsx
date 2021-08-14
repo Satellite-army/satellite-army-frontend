@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import "primereact/resources/themes/saga-orange/theme.css";
+import "primereact/resources/themes/vela-orange/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 

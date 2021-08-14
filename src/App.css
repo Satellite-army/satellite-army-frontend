@@ -17,6 +17,15 @@ body{
   background-image: url('assets/background.png');
 }
 
+.menuIcon{
+  height: 5em;
+  margin-left: 5em;
+}
+
+.menuTitle{
+  text-align: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,7 +34,7 @@ body{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #1f2d40;
 }
 
 .App-link {
@@ -38,6 +47,7 @@ body{
   display: block;
   padding:5rem;
 }
+
 
 @media screen and (min-width: 920px) {
   #sidebar_menu{
@@ -56,7 +66,7 @@ body{
 
 .appBody{
   width:100%;
-  background-color: white;
+  background-color: #1f2d40;
   height:100rem;
 }
 
@@ -65,7 +75,7 @@ body{
   float: left;
   border-left:  solid 1px;
   display: none;
-  background-color: white;
+  background-color: #1f2d40;
 }
 
 @media screen and (max-width: 920px) {
@@ -93,7 +103,7 @@ body{
   width: 100%;
   height:5rem;
   padding: 1rem;
-  background-color: white;
+  background-color: #1f2d40;
 }
 
 @keyframes App-logo-spin {
