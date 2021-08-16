@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { HashRouter, Route, Switch } from "react-router-dom";
-import Home from './views/home/home';
+import { Home}  from './views/home/home';
 import { AppView } from './views/app/appview';
 import { DashboardContent } from './components/dashboardContent';
 import { Wallet } from './components/wallet';
