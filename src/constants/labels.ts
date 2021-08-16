@@ -1,4 +1,7 @@
 export const LABELS = {
+  CHOOSE_WALLET_LBL: "Choose wallet",
+  CHANGE_WALLET_BTN: "Change",
+  CONNECTED_LABEL: "Connected to: ",
   CONNECT_LABEL: "Connect",
   BORROWING_POWER_USED: "Borrowing Power Used",
   BORROWING_POWER_VALUE: "Borrowing Power",

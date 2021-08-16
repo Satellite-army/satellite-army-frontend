@@ -5,6 +5,8 @@ import { TieredMenu } from 'primereact/tieredmenu'
 import { MenuItem } from "../../models/app/menuitem";
 import { useHistory } from "react-router-dom";
 import { Icon } from "../../assets";
+import { ConnectButton } from "../../components/ui/connectButton";
+
 export const AppView = (props: any)=>{
     const history = useHistory();
     const [visibleMobile, setVisibleMobile] = useState(false);
@@ -27,7 +29,7 @@ export const AppView = (props: any)=>{
             <div className="headerBar">
                 <Button icon="pi pi-align-justify" id="sidebar_show_mobile" onClick={() => setVisibleMobile(true)} className="p-button-raised p-button-text" />
                 <span style={{display:"inline-block", float:"right"}}>
-                    <Button label="Connect"  className="p-button-raised p-button-rounded" />
+                    <ConnectButton />
                     <Button icon="pi pi-cog" className="p-button-raised p-button-text" />
                 </span>
             </div>
