@@ -1,7 +1,8 @@
-import React from "react";
+// react imports
 import { Button } from 'primereact/button';
 import { Link } from "react-router-dom";
 
+// logo and lottie of planets imports
 import {Icon} from "../../assets";
 import Lottie from 'react-lottie';
 import planet1 from '../../assets/animation/planet1.json'
@@ -9,32 +10,30 @@ import planet2 from '../../assets/animation/planet2.json'
 import planet3 from '../../assets/animation/planet3.json'
 import extendedLogo from '../../assets/scritta.png'
 
-    const renderAnimation = (animationData: any) => {
-
-        console.log(animationData)
-        const defaultOptions = {
+// function to animate the planets lottie icons
+const renderAnimation = (animationData: any) => {
+    const defaultOptions = {
         loop: false,
         autoplay: true,
         animationData: animationData,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
         }
-        };
+    };
 
-        return (
-            <Lottie options={defaultOptions}
-                    height={150}
-                    width={150}
-                    isStopped={false}
-                    isPaused={false}/>
-        )
-    }
+    return (
+        <Lottie options={defaultOptions}
+                height={150}
+                width={150}
+                isStopped={false}
+                isPaused={false}/>
+    )
+}
 
     export const Home = () => {
     
 
         return (
-
             <div className="home-background">
                 <img className="header-icon" src={Icon}/>
                 <div className="body">
@@ -65,7 +64,7 @@ import extendedLogo from '../../assets/scritta.png'
                     </div>
                     </div>
                     <div className="buttons">
-                        <Link to="/app">
+                        <Link to="/app/dashboard">
                             <Button label="Connect to the galaxy" className="p-button-raised p-button-rounded p-button-text" />
                         </Link>
                         <a href="https://drive.google.com/file/d/1nrwCG2CfgJbdm0TTinsqNNpQT4WuXbXC/view" target="_blank">
